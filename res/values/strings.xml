@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PurchasesChart</string>
+    <string name="search_form">Форма поиска</string>
+    <string name="enter_search_mask">Введите маску поиска</string>
+    <string name="done">Готово</string>
+    <string name="new_sms">Получено SMS:</string>
+    <string name="number_marker">$1</string>
+    <string name="string_marker">$2</string>
+    <string name="skip_marker">$*</string>
+
+</resources>

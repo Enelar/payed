@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity" >
+
+    <TextView
+        android:id="@+id/tvSearchForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/search_form" />
+
+    <EditText
+        android:id="@+id/etSearchForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchForm"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="top|left"
+        android:hint="@string/enter_search_mask"
+        android:lines="5" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etSearchForm" >
+
+        <Button
+            style="@style/SearchMarker"
+            android:id="@+id/btnNumberMarker"
+            android:onClick="onNumberMarkerClick"
+            android:text="@string/number_marker" />
+        <Button
+            style="@style/SearchMarker"
+            android:id="@+id/btnStringMarker"
+            android:onClick="onStringMarkerClick"
+            android:text="@string/string_marker" />
+        <Button
+            style="@style/SearchMarker"
+            android:id="@+id/btnSkipMarker"
+            android:onClick="onSkipMarkerClick"
+            android:text="@string/skip_marker" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:onClick="onBtnDoneClick"
+        android:text="@string/done" />
+
+</RelativeLayout>
